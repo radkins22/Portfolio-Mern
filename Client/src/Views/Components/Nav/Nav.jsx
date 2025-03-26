@@ -14,19 +14,19 @@ const Nav = () => {
       <div className="flex space-x-6">
         <div
           onClick={() => nav("/about")}
-          className="cursor-pointer text-sky-300 hover:text-sky-400 transition"
+          className="cursor-pointer text-cyan-300 hover:text-cyan-400 transition"
         >
           About
         </div>
         <div
           onClick={() => nav("/projects")}
-          className="cursor-pointer text-sky-300 hover:text-sky-400 transition"
+          className="cursor-pointer text-cyan-300 hover:text-cyan-400 transition"
         >
           Projects
         </div>
         <div
           onClick={() => nav("/contact")}
-          className="cursor-pointer text-sky-300 hover:text-sky-400 transition"
+          className="cursor-pointer text-cyan-300 hover:text-cyan-400 transition"
         >
           Contact
         </div>
