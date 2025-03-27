@@ -19,6 +19,18 @@ const Nav = () => {
           About
         </div>
         <div
+          onClick={() => nav("/experience")}
+          className="cursor-pointer text-cyan-300 hover:text-cyan-400 transition"
+        >
+          Experience
+        </div>
+        <div
+          onClick={() => nav("/skills")}
+          className="cursor-pointer text-cyan-300 hover:text-cyan-400 transition"
+        >
+          Skills
+        </div>
+        <div
           onClick={() => nav("/projects")}
           className="cursor-pointer text-cyan-300 hover:text-cyan-400 transition"
         >

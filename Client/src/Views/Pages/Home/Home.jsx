@@ -18,7 +18,7 @@ const Home = () => {
     color: "transparent",
     WebkitBackgroundClip: "text",
     backgroundImage:
-      "linear-gradient(to left, rgb(2, 252, 243), rgb(23, 178, 178))",
+      "linear-gradient(to left,  #FF5252,  #FF4081,  #4DD0E1",
     fontWeight: 800,
     fontSize: "3.125rem",
   };
@@ -46,7 +46,7 @@ const Home = () => {
           </h1>
           <h2
             style={hollowEffectStyle}
-            className="font-proxima-nova text-cyan-100"
+            className="font-proxima-nova text-7xl font-semibold text-cyan-300 text-left"
           >
             Software Developer
           </h2>
