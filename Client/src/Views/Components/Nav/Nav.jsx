@@ -6,7 +6,7 @@ const Nav = () => {
   const nav = useNavigate();
 
   return (
-    <nav className="flex justify-between items-center px-6 py-4 bg-black text-white shadow-md">
+    <nav className="flex justify-between items-center px-6 py-4 bg-black text-white shadow-md border-b-2 border-cyan-500">
       <div className="flex items-center space-x-2 cursor-pointer" onClick={() => nav("/")}>
         <img src={logo} alt="Logo" className="h-10 w-10" />
         <span className="text-xl font-semibold">Rachael Higgins</span>
