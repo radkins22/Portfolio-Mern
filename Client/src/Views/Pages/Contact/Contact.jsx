@@ -42,12 +42,6 @@ const ContactForm = () => {
     });
   };
 
-  // Handle form submission
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log("Form submitted:", formData);
-  // };
-
   return (
     <div
       className="h-screen w-screen bg-cover bg-center bg-no-repeat overflow-hidden"
@@ -133,7 +127,7 @@ const ContactForm = () => {
             <div className="flex justify-center mt-6">
               <button
                 type="submit"
-                className="px-20 py-3 !rounded-full border-2 border-cyan-300 text-cyan-300 font-semibold hover:bg-cyan-300 hover:text-black transition-all cursor-pointer"
+                className="px-10 !text-2xl py-1 !rounded-full border-2 border-cyan-300 text-cyan-300 font-semibold hover:bg-cyan-300 hover:text-black transition-all cursor-pointer"
               >
                 Send
               </button>
