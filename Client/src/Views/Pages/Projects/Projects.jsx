@@ -1,12 +1,13 @@
 import Background from "../../../assets/images/pg5BG.png";
+import ComingSoon from "../../../assets/images/comingSoon.png";
 const Projects = () => {
   const images = [
-    { src: 'url1.jpg', link: 'https://example.com/site1' }, 
-    { src: 'url2.jpg', link: 'https://example.com/site2' },
-    { src: 'url3.jpg', link: 'https://example.com/site3' },
-    { src: 'url4.jpg', link: 'https://example.com/site4' },
-    { src: 'url5.jpg', link: 'https://example.com/site5' },
-    { src: 'url6.jpg', link: 'https://example.com/site6' },
+    { src: ComingSoon, link: "https://github.com/radkins22" },
+    { src: ComingSoon, link: "https://github.com/radkins22" },
+    { src: ComingSoon, link: "https://github.com/radkins22" },
+    { src: ComingSoon, link: "https://github.com/radkins22" },
+    { src: ComingSoon, link: "https://github.com/radkins22" },
+    { src: ComingSoon, link: "https://github.com/radkins22" },
   ];
 
   return (
@@ -26,7 +27,7 @@ const Projects = () => {
           {images.map((image, index) => (
             <a
               key={index}
-              className="border-[3px] border-cyan-300 rounded-lg bg-transparent shadow-lg double-border hover:shadow-2xl hover:scale-105 hover:cursor-pointer transition-all duration-300"
+              className="border-[3px] border-cyan-300 rounded-lg bg-transparent shadow-lg hover:shadow-2xl hover:scale-105 hover:cursor-pointer transition-all duration-300"
               href={image.link}
               target="_blank"
               rel="noopener noreferrer"
@@ -34,7 +35,7 @@ const Projects = () => {
               <img
                 src={image.src}
                 alt={`Grid Item ${index + 1}`}
-                className="w-full h-full object-cover rounded-lg"
+                className="mx-auto w-90 h-35 object-cover rounded-lg"
               />
             </a>
           ))}
