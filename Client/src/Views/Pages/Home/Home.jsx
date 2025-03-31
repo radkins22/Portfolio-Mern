@@ -10,7 +10,7 @@ const Home = () => {
     textShadow:
       "2px 2px 0px rgba(255, 0, 0, 0.7), -2px -2px 0px rgba(0, 255, 255, 0.7), 2px -2px 0px rgba(0, 255, 0, 0.7), -2px 2px 0px rgba(255, 255, 0, 0.7)",
     animation: "glitch-animation 1s infinite linear alternate-reverse",
-    fontSize: "6rem",
+    fontSize: "clamp(2rem, 6vw, 6rem)",
   };
 
   const hollowEffectStyle = {
@@ -20,7 +20,7 @@ const Home = () => {
     backgroundImage:
       "linear-gradient(to left,  #FF5252,  #FF4081,  #4DD0E1",
     fontWeight: 800,
-    fontSize: "3.125rem",
+    fontSize: "clamp(1.5rem, 4vw, 3.125rem)",
   };
 
   return (
@@ -31,14 +31,15 @@ const Home = () => {
       <img
         src={Selfie}
         alt="Rachael Higgins"
-        className="rounded-full h-40 w-40 shadow-lg absolute top-25 left-15"
+        className="rounded-full h-32 w-32 sm:h-40 sm:w-40 shadow-lg absolute top-[3%] left-[3%] sm:top-[12%] sm:left-[12%]"
       />
       <div className="h-full flex justify-center items-center text-white relative">
         <div
           className="absolute text-left"
           style={{
-            left: "14%", // This is where the text starts (positioned exactly as your original code)
-            top: "35%", // Moved 10% down from the original 25%
+            left: "14%", // Maintain original left position
+            top: "35%", // Maintain original top position, but allow it to be flexible
+            maxWidth: "90%", // Adjust width for smaller screens
           }}
         >
           <h1 style={glitchStyle} className="font-bold">
@@ -46,11 +47,11 @@ const Home = () => {
           </h1>
           <h2
             style={hollowEffectStyle}
-            className="font-proxima-nova text-7xl font-semibold text-cyan-300 text-left"
+            className="font-proxima-nova text-3xl sm:text-7xl font-semibold text-cyan-300"
           >
             Software Developer
           </h2>
-          <div className="flex space-x-6 mt-2">
+          <div className="flex space-x-6 mt-6">
             <a
               href="https://www.linkedin.com/in/rachael-higgins"
               target="_blank"

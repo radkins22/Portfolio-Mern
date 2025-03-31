@@ -11,11 +11,11 @@ const About = () => {
         width: "100vw",
       }}
     >
-      <div className="absolute bottom-1/8 left-1/2 transform -translate-x-1/8 text-left flex flex-col p-6">
-        <h1 className="!text-cyan-300 !text-5xl !font-bold !font-proxima-nova">
+      <div className="absolute top-1/8 left-1/2 transform -translate-x-[15%] text-left flex flex-col p-6">
+        <h1 className="!text-cyan-300 !font-bold !font-proxima-nova text-[1.5em] sm:text-[2em] md:text-[2.5em] lg:text-[3em] xl:text-[3.5em]">
           Introduction
         </h1>
-        <p className="text-white text-3xl w-full h-1/4 mt-4 font-proxima-nova">
+        <p className="text-white w-full h-1/4 mt-4 font-proxima-nova text-[0.875em] sm:text-[1em] md:text-[1em] lg:text-[1.25em] xl:text-[1.75em]">
           From adversity to innovation, I am proof that determination and
           intelligence can break any barrier. With a strong foundation in STEM
           and a relentless work ethic, I have transformed challenges into

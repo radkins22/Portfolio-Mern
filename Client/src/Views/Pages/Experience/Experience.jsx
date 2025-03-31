@@ -6,29 +6,29 @@ import ResumeModal from "../../Components/ResumeModal";
 const Experience = () => {
   return (
     <div
-      className="h-screen w-screen bg-cover bg-center bg-no-repeat overflow-hidden flex justify-center"
+      className="w-screen h-screen bg-cover bg-center bg-no-repeat overflow-hidden flex justify-center pb-20"
       style={{
         backgroundImage: `url(${Background})`,
-        height: "100vh",
-        width: "100vw",
       }}
     >
-      <div className="h-screen w-screen flex justify-center items-center -mt-10">
-        <div className="grid grid-cols-2 gap-25 px-8">
+      <div className="flex justify-center items-center w-full px-4 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-45 px-4 md:px-8 overflow-auto">
           {/* Left Section with two cards */}
-          <div className="flex flex-col space-y-0">
+          <div className="flex flex-col space-y-1">
             {/* Left Card 1 */}
-            <Card className="bg-transparent border-0 w-150">
+            <Card className="bg-transparent border-0 max-w-lg w-full">
               <Card.Body className="flex flex-col justify-between">
                 <div className="flex flex-col space-y-2">
-                  <h5 className="text-2xl font-semibold !text-cyan-300">
+                  <h5 className="text-xl md:text-2xl font-semibold !text-cyan-300">
                     Software Developer
                   </h5>
-                  <h5 className="text-2xl font-semibold !text-cyan-300">
+                  <h5 className="text-xl md:text-2xl font-semibold !text-cyan-300">
                     Banyan Labs LLC
                   </h5>
-                  <p className="text-white">03/2025 - Present</p>
-                  <ul className="text-white">
+                  <p className="text-white text-sm md:text-base">
+                    03/2025 - Present
+                  </p>
+                  <ul className="text-white text-sm md:text-base">
                     <li>
                       - Collaborate in Agile Scrum teams, participating in daily
                       stand-ups, sprint planning, and retrospectives.
@@ -51,17 +51,17 @@ const Experience = () => {
             </Card>
 
             {/* Left Card 2 */}
-            <Card className="bg-transparent border-0 w-150">
+            <Card className="bg-transparent border-0 max-w-lg w-full">
               <Card.Body className="flex flex-col justify-between">
                 <div className="flex flex-col space-y-2">
-                  <h5 className="text-2xl font-semibold !text-cyan-300">
+                  <h5 className="text-xl md:text-2xl font-semibold !text-cyan-300">
                     Full-Stack Developer
                   </h5>
-                  <h5 className="text-2xl font-semibold !text-cyan-300">
+                  <h5 className="text-xl md:text-2xl font-semibold !text-cyan-300">
                     Full-Stack Development Certification
                   </h5>
-                  <p className="text-white">June 2024</p>
-                  <ul className="text-white">
+                  <p className="text-white text-sm md:text-base">June 2024</p>
+                  <ul className="text-white text-sm md:text-base">
                     <li>
                       - Completed comprehensive training in full-stack
                       development with hands-on projects.
@@ -77,12 +77,12 @@ const Experience = () => {
           </div>
 
           {/* Right Section with two cards */}
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-1">
             {/* Right Card 1 */}
-            <Card className="bg-transparent border-0 w-150">
-              <Card.Body className="flex flex-col justify-between h-30">
+            <Card className="bg-transparent border-0 max-w-lg w-full">
+              <Card.Body className="flex flex-col justify-between">
                 <div className="flex flex-col space-y-2">
-                  <h5 className="!text-6xl font-semibold !text-cyan-300">
+                  <h5 className="!text-5xl md:text-4xl font-semibold !text-cyan-300">
                     Experience
                   </h5>
                 </div>
@@ -90,17 +90,19 @@ const Experience = () => {
             </Card>
 
             {/* Right Card 2 */}
-            <Card className="bg-transparent border-0 w-150">
+            <Card className="bg-transparent border-0 max-w-lg w-full">
               <Card.Body className="flex flex-col justify-between">
                 <div className="flex flex-col space-y-2">
-                  <h5 className="text-2xl font-semibold !text-cyan-300">
+                  <h5 className="text-xl md:text-2xl font-semibold !text-cyan-300">
                     Software Developer
                   </h5>
-                  <h5 className="text-2xl font-semibold !text-cyan-300">
+                  <h5 className="text-xl md:text-2xl font-semibold !text-cyan-300">
                     Assessment Pathways
                   </h5>
-                  <p className="text-white">03/2025 - Present</p>
-                  <ul className="text-white">
+                  <p className="text-white text-sm md:text-base">
+                    03/2025 - Present
+                  </p>
+                  <ul className="text-white text-sm md:text-base">
                     <li>
                       - Developing a Google Chrome extension using React,
                       JavaScript, and Firebase to assist teachers in grading
@@ -123,7 +125,8 @@ const Experience = () => {
                 </div>
               </Card.Body>
             </Card>
-            <div>
+
+            <div className="flex justify-center">
               <ResumeModal />
             </div>
           </div>

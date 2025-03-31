@@ -9,6 +9,7 @@ import NodeAnimate from "../../../assets/animation/nodeAnimate.gif";
 import ExpressAnimate from "../../../assets/animation/expressAnimate.gif";
 import HtmlAnimate from "../../../assets/animation/htmlAnimate.gif";
 import TailwindAnimate from "../../../assets/animation/tailwindAnimate.gif";
+
 const Skills = () => {
   const icons = [
     { src: ReactAnimation, alt: "React" },
@@ -23,51 +24,37 @@ const Skills = () => {
   ];
 
   const numberOfImages = icons.length;
-  const radius = 350; // Adjust the radius for a larger circle
-  const angle = (2 * Math.PI) / numberOfImages; // Calculate angle between each image
+  const radiusX = 320; // Slightly reduced width
+  const radiusY = 240; // Slightly reduced height
+  const angle = (2 * Math.PI) / numberOfImages;
 
   return (
     <div
-      className="h-screen w-screen bg-cover bg-center bg-no-repeat overflow-hidden"
-      style={{
-        backgroundImage: `url(${Background})`,
-        height: "100vh",
-        width: "100vw",
-      }}
+      className="h-screen w-screen bg-cover bg-center bg-no-repeat overflow-hidden flex justify-center items-start pt-10"
+      style={{ backgroundImage: `url(${Background})` }}
     >
-      {" "}
-      {/* Adjusted margin-top to bring it closer */}
       {/* Elliptical Circle container */}
-      <div className="relative w-full h-screen flex justify-center items-start mt-12">
-      <div
-        className="absolute w-[600px] h-[400px] rounded-full flex justify-center items-center"
-        style={{
-          position: "relative",
-        }}
-      >
-        {/* Images arranged in an elliptical circle */}
+      <div className="relative w-[650px] h-[430px] sm:w-[730px] sm:h-[550px] flex justify-center items-center mt-[-20px]">
         {icons.map((icon, index) => {
-          const rotationAngle = angle * index; // Calculate the rotation for each image
-          const xPosition = radius * Math.cos(rotationAngle); // Calculate the x position (horizontal position)
-          const yPosition = (radius / 1.5) * Math.sin(rotationAngle); // Adjust for elliptical effect by stretching the y-axis
+          const rotationAngle = angle * index;
+          const xPosition = radiusX * Math.cos(rotationAngle);
+          const yPosition = radiusY * Math.sin(rotationAngle);
 
           return (
             <img
               key={index}
               src={icon.src}
               alt={icon.alt}
-              className="absolute"
+              className="absolute w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain"
               style={{
                 left: `calc(50% + ${xPosition}px)`,
                 top: `calc(50% + ${yPosition}px)`,
-                width: "100px",
-                height: "100px",
+                transform: "translate(-50%, -50%)",
               }}
             />
           );
         })}
       </div>
-    </div>
     </div>
   );
 };
