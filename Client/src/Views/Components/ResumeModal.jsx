@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 
 function ResumeModal() {
   const values = [true];
@@ -39,7 +41,7 @@ function ResumeModal() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              <FaLinkedin className="text-2xl" />
             </a>
             <p>|</p>
             <a
@@ -47,7 +49,7 @@ function ResumeModal() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub
+              <FaGithub className="text-2xl text-black" />
             </a>
           </div>
           <h3 class="underline">Summary</h3>
@@ -64,7 +66,7 @@ function ResumeModal() {
           <div class="flex space-x-20">
             <div>
               <h5>Technical Skills</h5>
-              <ul>
+              <ul className="list-disc">
                 <li>
                   Full-Stack Web Development (HTML, CSS, JavaScript, React,
                   Node.js)
@@ -78,7 +80,7 @@ function ResumeModal() {
             </div>
             <div>
               <h5>Professional Skills</h5>
-              <ul>
+              <ul className="list-disc">
                 <li>Problem-Solving & Critical Thinking</li>
                 <li>Technical Troubleshooting</li>
                 <li>Process Optimization & Documentation</li>
@@ -91,7 +93,7 @@ function ResumeModal() {
           <h3 class="underline">Work Experience</h3>
           <h4>Software Developer, Banyan Labs, Remote</h4>
           <p>03/18/2025 - Present</p>
-          <ul>
+          <ul class="list-disc">
             <li>
               Collaborate in Agile Scrum teams, participating in daily
               stand-ups, sprint planning, and retrospectives.
@@ -111,14 +113,12 @@ function ResumeModal() {
           </ul>
           <h4>Software Developer, Assessment Pathways, Remote</h4>
           <p>03/18/2025 - Present</p>
-          <ul>
+          <ul className="list-disc">
             <li>
-              Developing a Google Chrome extension using React, JavaScript, and
-              Firebase to assist teachers in grading assignments with
-              AI-generated feedback.
+            Developing a Google Chrome extension using React, JavaScript, and the MERN stack to assist teachers in grading assignments with AI-generated feedback.
             </li>
             <li>
-              Implementing OAuth3 authentication and Google Cloud Platform to
+              Implementing OAuth2 authentication and Google Cloud Platform to
               ensure secure access, scalability, and efficient AI processing.
             </li>
             <li>
@@ -165,7 +165,7 @@ function ResumeModal() {
           </p>
 
           <a
-            href="https://github.com/radkins22/assessment-pathways"
+            href="https://github.com/radkins22/AP-Chrome-Extension"
             target="_blank"
             rel="noopener noreferrer"
           >

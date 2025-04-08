@@ -39,19 +39,37 @@ const Skills = () => {
           const rotationAngle = angle * index;
           const xPosition = radiusX * Math.cos(rotationAngle);
           const yPosition = radiusY * Math.sin(rotationAngle);
+          const isReact = icon.alt === "React";
 
           return (
-            <img
+            <div
               key={index}
-              src={icon.src}
-              alt={icon.alt}
-              className="absolute w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain"
+              className="absolute group pb-2"
               style={{
                 left: `calc(50% + ${xPosition}px)`,
                 top: `calc(50% + ${yPosition}px)`,
                 transform: "translate(-50%, -50%)",
               }}
-            />
+            >
+              <img
+                src={icon.src}
+                alt={icon.alt}
+                className={`w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain cursor-pointer transition-transform duration-300 hover:scale-110`}
+                style={{
+                  transform: isReact ? "scale(2.3)" : undefined,
+                }}
+                onMouseEnter={(e) => {
+                  if (isReact) e.currentTarget.style.transform = "scale-110";
+                }}
+                onMouseLeave={(e) => {
+                  if (isReact) e.currentTarget.style.transform = "scale(2.2)";
+                }}
+              />
+             <span className="absolute left-full mb-2 left-1/2 transform -translate-x-1/2 scale-0 group-hover:scale-100 transition-transform duration-300 bg-black text-white text-s px-2 py-1 rounded-md whitespace-nowrap">
+
+                {icon.alt}
+              </span>
+            </div>
           );
         })}
       </div>

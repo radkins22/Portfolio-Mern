@@ -1,11 +1,16 @@
 import Background from "../../../assets/images/pg5BG.png";
 import ComingSoon from "../../../assets/images/comingSoon.png";
+import LibraryPic from "../../../assets/images/libraryPic.png";
+import CapstonePic from "../../../assets/images/capstonePic.png";
+import ApChromeExt from "../../../assets/images/ap-chromeExtension.png";
+import Portfolio from "../../../assets/images/portfolio.png";
+
 const Projects = () => {
   const images = [
-    { src: ComingSoon, link: "https://github.com/radkins22" },
-    { src: ComingSoon, link: "https://github.com/radkins22" },
-    { src: ComingSoon, link: "https://github.com/radkins22" },
-    { src: ComingSoon, link: "https://github.com/radkins22" },
+    { src: CapstonePic, link: "https://github.com/radkins22/capture-it-photography" },
+    { src: LibraryPic, link: "https://github.com/radkins22/full-mern" },
+    { src: ApChromeExt, link: "https://github.com/radkins22/AP-Chrome-Extension" },
+    { src: Portfolio, link: "https://github.com/radkins22/Portfolio-Mern" },
     { src: ComingSoon, link: "https://github.com/radkins22" },
     { src: ComingSoon, link: "https://github.com/radkins22" },
   ];

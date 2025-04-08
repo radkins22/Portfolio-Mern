@@ -28,21 +28,21 @@ const Experience = () => {
                   <p className="text-white text-sm md:text-base">
                     03/2025 - Present
                   </p>
-                  <ul className="text-white text-sm md:text-base">
+                  <ul className="text-white text-sm md:text-base list-disc">
                     <li>
-                      - Collaborate in Agile Scrum teams, participating in daily
+                      Collaborate in Agile Scrum teams, participating in daily
                       stand-ups, sprint planning, and retrospectives.
                     </li>
                     <li>
-                      - Develop and debug software solutions through paired
+                      Develop and debug software solutions through paired
                       programming and Jira-managed tasks.
                     </li>
                     <li>
-                      - Work on real-world client projects, implementing
+                      Work on real-world client projects, implementing
                       scalable and efficient code.
                     </li>
                     <li>
-                      - Utilize version control (Git) and cloud-based tools to
+                      Utilize version control (Git) and cloud-based tools to
                       enhance team collaboration.
                     </li>
                   </ul>
@@ -61,13 +61,13 @@ const Experience = () => {
                     Full-Stack Development Certification
                   </h5>
                   <p className="text-white text-sm md:text-base">June 2024</p>
-                  <ul className="text-white text-sm md:text-base">
+                  <ul className="text-white text-sm md:text-base list-disc">
                     <li>
-                      - Completed comprehensive training in full-stack
+                      Completed comprehensive training in full-stack
                       development with hands-on projects.
                     </li>
                     <li>
-                      - Gained expertise in API integration, responsive web
+                      Gained expertise in API integration, responsive web
                       design, and agile development practices.
                     </li>
                   </ul>
@@ -102,23 +102,21 @@ const Experience = () => {
                   <p className="text-white text-sm md:text-base">
                     03/2025 - Present
                   </p>
-                  <ul className="text-white text-sm md:text-base">
+                  <ul className="text-white text-sm md:text-base list-disc">
                     <li>
-                      - Developing a Google Chrome extension using React,
-                      JavaScript, and Firebase to assist teachers in grading
-                      assignments with AI-generated feedback.
+                      Developing a Google Chrome extension using React, JavaScript, and the MERN stack to assist teachers in grading assignments with AIenerated feedback.
                     </li>
                     <li>
-                      - Implementing OAuth2 authentication and Google Cloud
+                      Implementing OAuth2 authentication and Google Cloud
                       Platform to ensure secure access, scalability, and
                       efficient AI processing.
                     </li>
                     <li>
-                      - Optimizing AI models to provide accurate grading and
-                      constructive feedback, enhancing efficiency in education.
+                      Optimizing AI models to provide accurate grading and
+                      constructive feedback, streamlining the evaluation process for educators.
                     </li>
                     <li>
-                      - Collaborating with educators and developers in an Agile
+                      Collaborating with educators and developers in an Agile
                       environment to refine functionality and user experience.
                     </li>
                   </ul>
@@ -126,7 +124,7 @@ const Experience = () => {
               </Card.Body>
             </Card>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-15">
               <ResumeModal />
             </div>
           </div>

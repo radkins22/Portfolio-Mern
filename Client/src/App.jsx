@@ -1,4 +1,4 @@
-import { useState } from "react";
+import Toast from "./Views/Components/Toast";
 import Nav from "./Views/Components/Nav/Nav";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Views/Pages/Home/Home";
@@ -11,6 +11,7 @@ import Contact from "./Views/Pages/Contact/Contact";
 function App() {
   return (
     <>
+      <Toast />
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />

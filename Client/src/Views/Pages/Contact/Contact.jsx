@@ -2,11 +2,13 @@ import React, { useState, useRef } from "react";
 import { Form } from "react-bootstrap";
 import Background from "../../../assets/images/pg6BG.png";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
   const form = useRef();
 
   const [formData, setFormData] = useState({});
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,12 +22,12 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log("form submitted:", result.text);
-          alert("Message sent successfully!");
+          toast.success("Message sent successfully!");
           setFormData({});
         },
         (error) => {
           console.log("Error", error.text);
-          alert("Failed to send message. Please try again.");
+          toast.warning("Failed to send message. Please try again.");
         }
       );
   };
@@ -58,7 +60,10 @@ const ContactForm = () => {
             onSubmit={sendEmail}
             className="bg-transparent p-6 rounded-lg shadow-lg"
           >
-            <Form.Group controlId="name" className="mb-4 flex items-center space-x-4 sm:space-x-6 md:space-x-8">
+            <Form.Group
+              controlId="name"
+              className="mb-4 flex items-center space-x-4 sm:space-x-6 md:space-x-8"
+            >
               <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4 text-right">
                 Name:
               </Form.Label>
@@ -73,7 +78,10 @@ const ContactForm = () => {
               />
             </Form.Group>
 
-            <Form.Group controlId="phone" className="mb-4 flex items-center space-x-4 sm:space-x-6 md:space-x-8">
+            <Form.Group
+              controlId="phone"
+              className="mb-4 flex items-center space-x-4 sm:space-x-6 md:space-x-8"
+            >
               <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4 text-right">
                 Phone:
               </Form.Label>
@@ -88,7 +96,10 @@ const ContactForm = () => {
               />
             </Form.Group>
 
-            <Form.Group controlId="email" className="mb-4 flex items-center space-x-4 sm:space-x-6 md:space-x-8">
+            <Form.Group
+              controlId="email"
+              className="mb-4 flex items-center space-x-4 sm:space-x-6 md:space-x-8"
+            >
               <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4 flex items-center text-right">
                 Email:
               </Form.Label>
@@ -104,7 +115,10 @@ const ContactForm = () => {
               />
             </Form.Group>
 
-            <Form.Group controlId="message" className="mb-6 flex items-center space-x-4 sm:space-x-6 md:space-x-8">
+            <Form.Group
+              controlId="message"
+              className="mb-6 flex items-center space-x-4 sm:space-x-6 md:space-x-8"
+            >
               <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4">
                 Message:
               </Form.Label>
