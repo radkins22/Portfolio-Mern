@@ -16,14 +16,13 @@ const About = () => {
           Introduction
         </h1>
         <p className="text-white w-full h-1/4 mt-4 font-proxima-nova text-[0.875em] sm:text-[1em] md:text-[1em] lg:text-[1.25em] xl:text-[1.75em]">
-          From adversity to innovation, I am proof that determination and
-          intelligence can break any barrier. With a strong foundation in STEM
-          and a relentless work ethic, I have transformed challenges into
-          opportunities, using my expertise to drive meaningful change. I
-          connect with others through authenticity and relatability,
-          demonstrating that no obstacle is insurmountable. My mission is to
-          inspire, build, and lead - proving that success is not defined by the
-          past, but by the vision and dedication to shape the future.
+          From adversity to full-stack innovation, I've turned setbacks into
+          source code. With a strong STEM foundation and relentless drive, I
+          build real-world solutions— from scalable backends to responsive
+          frontends. I write clean, efficient code with purpose, using every
+          challenge as fuel to grow, solve, and ship. I'm not here just to build
+          apps—I'm here to break barriers, inspire through action, and prove
+          that where you start doesn't define how far you can go.
         </p>
       </div>
     </div>
