@@ -51,6 +51,7 @@ const Home = () => {
           >
             Software Developer
           </h2>
+          <h5 className="text-white">Building robust backend logic to dynamic UI, <br/>I turn complex requirements into real-world, maintainable code.</h5>
           <div className="flex space-x-6 mt-6">
             <a
               href="https://www.linkedin.com/in/rachael-higgins"

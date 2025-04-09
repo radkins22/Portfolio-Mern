@@ -9,15 +9,14 @@ const ContactForm = () => {
 
   const [formData, setFormData] = useState({});
 
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_qwiukxg",
+        "service_a7ogqo6",
         "template_1u12neg",
         form.current,
-        "rVaqQ8LD7meENcXdA"
+        "0F1I_evtXzAvXqrLL"
       )
       .then(
         (result) => {
@@ -50,11 +49,11 @@ const ContactForm = () => {
         width: "100vw",
       }}
     >
-      <h2 className="w-1/2 text-center !text-cyan-300 !text-4xl sm:text-4xl md:text-5xl mb-6 pt-10">
-        Contact Me
-      </h2>
       <div className="flex items-center justify-center w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-3/4 bg-transparent p-6">
         <div className="w-full max-w-md">
+          <h2 className=" text-center !text-cyan-300 !text-5xl sm:text-4xl md:text-5xl mb-6 pt-10">
+            Contact Me
+          </h2>
           <Form
             ref={form}
             onSubmit={sendEmail}
@@ -64,9 +63,9 @@ const ContactForm = () => {
               controlId="name"
               className="mb-4 flex items-center space-x-4 sm:space-x-6 md:space-x-8"
             >
-              <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4 text-right">
+              {/* <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4 text-right">
                 Name:
-              </Form.Label>
+              </Form.Label> */}
               <Form.Control
                 type="text"
                 name="name"
@@ -82,9 +81,9 @@ const ContactForm = () => {
               controlId="phone"
               className="mb-4 flex items-center space-x-4 sm:space-x-6 md:space-x-8"
             >
-              <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4 text-right">
+              {/* <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4 text-right">
                 Phone:
-              </Form.Label>
+              </Form.Label> */}
               <Form.Control
                 type="tel"
                 name="phone"
@@ -100,9 +99,9 @@ const ContactForm = () => {
               controlId="email"
               className="mb-4 flex items-center space-x-4 sm:space-x-6 md:space-x-8"
             >
-              <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4 flex items-center text-right">
+              {/* <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4 flex items-center text-right">
                 Email:
-              </Form.Label>
+              </Form.Label> */}
 
               <Form.Control
                 type="email"
@@ -119,9 +118,9 @@ const ContactForm = () => {
               controlId="message"
               className="mb-6 flex items-center space-x-4 sm:space-x-6 md:space-x-8"
             >
-              <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4">
+              {/* <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4">
                 Message:
-              </Form.Label>
+              </Form.Label> */}
               <Form.Control
                 as="textarea"
                 rows={4}
