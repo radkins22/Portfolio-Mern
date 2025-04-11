@@ -1,4 +1,4 @@
-import { ToastContainer, Slide, Bounce } from "react-toastify";
+import { ToastContainer, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Toast = () => {
@@ -13,8 +13,6 @@ const Toast = () => {
       draggable
       pauseOnHover
       theme="light"
-      // transition={Slide}
-      // transition={Flip}
       transition={Bounce}
     />
   );

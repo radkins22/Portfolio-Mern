@@ -37,9 +37,9 @@ const Home = () => {
         <div
           className="absolute text-left"
           style={{
-            left: "14%", // Maintain original left position
-            top: "35%", // Maintain original top position, but allow it to be flexible
-            maxWidth: "90%", // Adjust width for smaller screens
+            left: "14%", 
+            top: "35%", 
+            maxWidth: "90%",
           }}
         >
           <h1 style={glitchStyle} className="font-bold">

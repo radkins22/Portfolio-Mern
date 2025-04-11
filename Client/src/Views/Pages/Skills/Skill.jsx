@@ -24,8 +24,8 @@ const Skills = () => {
   ];
 
   const numberOfImages = icons.length;
-  const radiusX = 320; // Slightly reduced width
-  const radiusY = 240; // Slightly reduced height
+  const radiusX = 320; 
+  const radiusY = 240; 
   const angle = (2 * Math.PI) / numberOfImages;
 
   return (
@@ -33,7 +33,6 @@ const Skills = () => {
       className="h-screen w-screen bg-cover bg-center bg-no-repeat overflow-hidden flex justify-center items-start pt-10"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      {/* Elliptical Circle container */}
       <div className="relative w-[650px] h-[430px] sm:w-[730px] sm:h-[550px] flex justify-center items-center mt-[-20px]">
         {icons.map((icon, index) => {
           const rotationAngle = angle * index;

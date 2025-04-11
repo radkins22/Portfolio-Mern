@@ -173,7 +173,7 @@ function ResumeModal() {
           </a>
           <p>
             Developed a google chrome extension using React, Open AI, and
-            Firebase.
+            Google OAuth2.
           </p>
           <a
             href="https://github.com/radkins22/full-mern"

@@ -31,7 +31,6 @@ const ContactForm = () => {
       );
   };
 
-  // Handle form field change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -63,9 +62,6 @@ const ContactForm = () => {
               controlId="name"
               className="mb-4 flex items-center space-x-4 sm:space-x-6 md:space-x-8"
             >
-              {/* <Form.Label className="text-white text-lg sm:text-xl md:text-2xl font-bold w-1/4 text-right">
-                Name:
-              </Form.Label> */}
               <Form.Control
                 type="text"
                 name="name"

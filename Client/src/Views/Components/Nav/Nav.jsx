@@ -14,7 +14,6 @@ const Nav = () => {
         <span className="text-xl font-semibold">Rachael Higgins</span>
       </div>
       
-      {/* Desktop Menu */}
       <div className="hidden md:flex space-x-6">
         {['About', 'Experience', 'Skills', 'Projects', 'Contact'].map((item) => (
           <div
@@ -27,14 +26,12 @@ const Nav = () => {
         ))}
       </div>
       
-      {/* Mobile Menu Toggle */}
       <div className="md:hidden z-50">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </div>
       
-      {/* Mobile Menu */}
       <div className={`absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center space-y-4 py-4 border-t border-cyan-500 md:hidden transition-all duration-300 ease-in-out ${isOpen ? "block" : "hidden"} z-50`}>        
         {['About', 'Experience', 'Skills', 'Projects', 'Contact'].map((item) => (
           <div

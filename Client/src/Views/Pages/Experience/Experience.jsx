@@ -13,9 +13,7 @@ const Experience = () => {
     >
       <div className="flex justify-center items-center w-full px-4 mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-45 px-4 md:px-8 overflow-auto">
-          {/* Left Section with two cards */}
           <div className="flex flex-col space-y-1">
-            {/* Left Card 1 */}
             <Card className="bg-transparent border-0 max-w-lg w-full">
               <Card.Body className="flex flex-col justify-between">
                 <div className="flex flex-col space-y-2">
@@ -50,7 +48,6 @@ const Experience = () => {
               </Card.Body>
             </Card>
 
-            {/* Left Card 2 */}
             <Card className="bg-transparent border-0 max-w-lg w-full">
               <Card.Body className="flex flex-col justify-between">
                 <div className="flex flex-col space-y-2">
