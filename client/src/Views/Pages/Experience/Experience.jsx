@@ -11,7 +11,7 @@ const Experience = () => {
         backgroundImage: `url(${Background})`,
       }}
     >
-      <div className="flex justify-center items-start w-full px-4 mt-10">
+      <div className="flex justify-center items-start w-full px">
         <div className="w-full max-w-screen-xl px-4 md:px-8">
           {/* Main Grid with larger gap on larger screens */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-18 md:gap-20 lg:gap-22 overflow-auto">
