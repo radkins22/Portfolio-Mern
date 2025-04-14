@@ -24,8 +24,8 @@ const Skills = () => {
   ];
 
   const numberOfImages = icons.length;
-  const radiusX = 320; 
-  const radiusY = 240; 
+  const radiusX = 320;
+  const radiusY = 240;
   const angle = (2 * Math.PI) / numberOfImages;
 
   return (
@@ -33,44 +33,64 @@ const Skills = () => {
       className="h-screen w-screen bg-cover bg-center bg-no-repeat overflow-hidden flex justify-center items-start pt-10"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      <div className="relative w-[650px] h-[430px] sm:w-[730px] sm:h-[550px] flex justify-center items-center mt-[-20px]">
-        {icons.map((icon, index) => {
-          const rotationAngle = angle * index;
-          const xPosition = radiusX * Math.cos(rotationAngle);
-          const yPosition = radiusY * Math.sin(rotationAngle);
-          const isReact = icon.alt === "React";
+      <div className="relative w-[650px] h-[430px] sm:w-[730px] sm:h-[550px] lg:w-[850px] lg:h-[600px] flex justify-center items-center mt-[-20px]">
+        {/* Scrollable Container for Mobile */}
+        <div className="w-full h-full flex justify-center items-center overflow-auto sm:hidden">
+          <div className="flex flex-wrap justify-center space-x-4 space-y-4">
+            {icons.map((icon, index) => (
+              <div key={index} className="group pb-2">
+                <img
+                  src={icon.src}
+                  alt={icon.alt}
+                  className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain cursor-pointer transition-transform duration-300 hover:scale-110"
+                />
+                <span className="absolute left-full mb-2 left-1/2 transform -translate-x-1/2 scale-0 group-hover:scale-100 transition-transform duration-300 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
+                  {icon.alt}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
 
-          return (
-            <div
-              key={index}
-              className="absolute group pb-2"
-              style={{
-                left: `calc(50% + ${xPosition}px)`,
-                top: `calc(50% + ${yPosition}px)`,
-                transform: "translate(-50%, -50%)",
-              }}
-            >
-              <img
-                src={icon.src}
-                alt={icon.alt}
-                className={`w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain cursor-pointer transition-transform duration-300 hover:scale-110`}
+        {/* Circular Layout for Larger Screens */}
+        <div className="absolute flex justify-center items-center w-full h-full sm:flex hidden">
+          {icons.map((icon, index) => {
+            const rotationAngle = angle * index;
+            const xPosition = radiusX * Math.cos(rotationAngle);
+            const yPosition = radiusY * Math.sin(rotationAngle);
+            const isReact = icon.alt === "React";
+
+            return (
+              <div
+                key={index}
+                className="absolute group pb-2"
                 style={{
-                  transform: isReact ? "scale(2.3)" : undefined,
+                  left: `calc(50% + ${xPosition}px)`,
+                  top: `calc(50% + ${yPosition}px)`,
+                  transform: "translate(-50%, -50%)",
                 }}
-                onMouseEnter={(e) => {
-                  if (isReact) e.currentTarget.style.transform = "scale-110";
-                }}
-                onMouseLeave={(e) => {
-                  if (isReact) e.currentTarget.style.transform = "scale(2.2)";
-                }}
-              />
-             <span className="absolute left-full mb-2 left-1/2 transform -translate-x-1/2 scale-0 group-hover:scale-100 transition-transform duration-300 bg-black text-white text-s px-2 py-1 rounded-md whitespace-nowrap">
-
-                {icon.alt}
-              </span>
-            </div>
-          );
-        })}
+              >
+                <img
+                  src={icon.src}
+                  alt={icon.alt}
+                  className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain cursor-pointer transition-transform duration-300 hover:scale-110"
+                  style={{
+                    transform: isReact ? "scale(2.3)" : undefined,
+                  }}
+                  onMouseEnter={(e) => {
+                    if (isReact) e.currentTarget.style.transform = "scale(1.1)";
+                  }}
+                  onMouseLeave={(e) => {
+                    if (isReact) e.currentTarget.style.transform = "scale(1.0)";
+                  }}
+                />
+                <span className="absolute left-full mb-2 left-1/2 transform -translate-x-1/2 scale-0 group-hover:scale-100 transition-transform duration-300 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
+                  {icon.alt}
+                </span>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
