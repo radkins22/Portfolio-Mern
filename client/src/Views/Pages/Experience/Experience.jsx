@@ -14,7 +14,7 @@ const Experience = () => {
       <div className="flex justify-center items-start w-full px">
         <div className="w-full max-w-screen-xl px-4 md:px-8">
           {/* Main Grid with larger gap on larger screens */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-18 md:gap-20 lg:gap-22 overflow-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-18 md:gap-20 lg:gap-22 overflow-x-auto">
             {/* Left Section with two cards */}
             <div className="flex flex-col space-y-4 order-last md:order-first">
               <Card className="bg-transparent border-0 max-w-lg w-full">
@@ -128,7 +128,7 @@ const Experience = () => {
               </Card>
 
               {/* ResumeModal Button */}
-              <div className="flex justify-center mb-4 sm:mb-15">
+              <div className="flex justify-center sm:mb-15">
                 <ResumeModal />
               </div>
             </div>
