@@ -1,10 +1,10 @@
 import Background from "../../../assets/images/pg5BG.png";
-import ComingSoon from "../../../assets/images/comingSoon.png";
 import LibraryPic from "../../../assets/images/libraryPic.png";
 import CapstonePic from "../../../assets/images/capstonePic.png";
 import ApChromeExt from "../../../assets/images/ap-chromeExtension.png";
 import Portfolio from "../../../assets/images/portfolio.png";
 import ApLanding from "../../../assets/images/ap-landing.png";
+import WpFoodTruck from "../../../assets/images/wpFoodTruck.png"
 
 const Projects = () => {
   const images = [
@@ -34,9 +34,9 @@ const Projects = () => {
       title: "A full-stack landing page, AI grading app for teachers",
     },
     {
-      src: ComingSoon,
-      link: "https://github.com/radkins22",
-      title: "Project Coming Soon",
+      src: WpFoodTruck,
+      link: "https://github.com/coder-j25/phillys",
+      title: "A frontend React food truck app",
     },
   ];
 
