@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Skills from "./Views/Pages/Skills/Skill";
 import Projects from "./Views/Pages/Projects/Projects";
 import Contact from "./Views/Pages/Contact/Contact";
+
 function App() {
   return (
     <>

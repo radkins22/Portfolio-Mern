@@ -25,12 +25,12 @@ const Projects = () => {
     },
     {
       src: Portfolio,
-      link: "https://github.com/radkins22/Portfolio-Mern",
+      link: "https://rachael-higgins.vercel.app",
       title: "My Personal Tech Portfolio, a React frontend app",
     },
     {
       src: ApLanding,
-      link: "https://github.com/radkins22",
+      link: "https://www.assessmentpathways.com",
       title: "A full-stack landing page, AI grading app for teachers",
     },
     {
