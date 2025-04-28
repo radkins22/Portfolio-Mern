@@ -131,7 +131,7 @@ const ContactForm = () => {
             <div className="flex justify-center mt-6">
               <button
                 type="submit"
-                className="px-10 text-lg sm:text-xl md:text-2xl py-1 !rounded-full border-2 border-cyan-300 text-cyan-300 font-semibold hover:bg-cyan-300 hover:text-black transition-all cursor-pointer"
+                className="!text-xl sm:text-xl md:text-2xl  px-20 py-3 !rounded-full border-2 font-semibold bg-cyan-300 hover:bg-black hover:text-cyan-300 hover:border-cyan-300 transition-all cursor-pointer"
               >
                 Send
               </button>

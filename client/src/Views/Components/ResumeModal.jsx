@@ -18,7 +18,7 @@ function ResumeModal() {
       {values.map((v, idx) => (
         <button
           key={idx}
-          className="px-20 py-3 !rounded-full border-2 border-cyan-300 text-cyan-300 font-semibold hover:bg-cyan-300 hover:text-black transition-all cursor-pointer"
+          className="!text-xl px-20 py-3 !rounded-full border-2 border-cyan-300 text-cyan-300 font-semibold hover:bg-cyan-300 hover:text-black transition-all cursor-pointer"
           onClick={() => handleShow(v)}
         >
           Resume
