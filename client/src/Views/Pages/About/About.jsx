@@ -4,18 +4,16 @@ import Background from "../../../assets/images/pg2BG.png";
 const About = () => {
   return (
     <div
-      className="h-screen w-screen bg-cover bg-center bg-no-repeat overflow-hidden"
+      className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat flex items-center justify-center px-4"
       style={{
         backgroundImage: `url(${Background})`,
-        height: "100vh",
-        width: "100vw",
       }}
     >
-      <div className="absolute top-1/8 left-1/2 transform -translate-x-[15%] text-left flex flex-col p-6">
+      <div className="bg-black bg-opacity-50 p-6 rounded-lg w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] max-w-5xl ml-auto text-left">
         <h1 className="!text-cyan-300 !font-bold !font-proxima-nova text-[1.5em] sm:text-[2em] md:text-[2.5em] lg:text-[3em] xl:text-[3.5em]">
           Introduction
         </h1>
-        <p className="text-white w-full h-1/4 mt-4 font-proxima-nova text-[0.875em] sm:text-[1em] md:text-[1em] lg:text-[1.25em] xl:text-[1.75em]">
+        <p className="text-white mt-4 font-proxima-nova text-[0.875em] sm:text-[1em] md:text-[1em] lg:text-[1.25em] xl:text-[1.75em]">
           From adversity to full-stack innovation, I've turned setbacks into
           source code. With a strong STEM foundation and relentless drive, I
           build real-world solutions— from scalable backends to responsive
