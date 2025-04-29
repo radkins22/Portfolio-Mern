@@ -17,8 +17,7 @@ const Home = () => {
     position: "relative",
     color: "transparent",
     WebkitBackgroundClip: "text",
-    backgroundImage:
-      "linear-gradient(to left,  #FF5252,  #FF4081,  #4DD0E1",
+    backgroundImage: "linear-gradient(to left,  #FF5252,  #FF4081,  #4DD0E1",
     fontWeight: 800,
     fontSize: "clamp(1.5rem, 4vw, 3.125rem)",
   };
@@ -26,7 +25,11 @@ const Home = () => {
   return (
     <div
       className="h-screen w-screen bg-cover bg-center bg-no-repeat overflow-hidden relative"
-      style={{ backgroundImage: `url(${Background})` }}
+      style={{
+        backgroundImage: `url(${Background})`,
+        backgroundSize: "cover", // Ensures image scales
+        backgroundPosition: "center",
+      }}
     >
       <img
         src={Selfie}
@@ -34,14 +37,7 @@ const Home = () => {
         className="rounded-full h-32 w-32 sm:h-40 sm:w-40 shadow-lg absolute top-[3%] left-[3%] sm:top-[12%] sm:left-[12%]"
       />
       <div className="h-full flex justify-center items-center text-white relative">
-        <div
-          className="absolute text-left"
-          style={{
-            left: "14%", 
-            top: "35%", 
-            maxWidth: "90%",
-          }}
-        >
+        <div className="absolute text-left left-4 top-1/4 sm:left-[14%] sm:top-[35%] max-w-[90%]">
           <h1 style={glitchStyle} className="font-bold">
             Rachael Higgins
           </h1>
@@ -51,7 +47,10 @@ const Home = () => {
           >
             Software Developer
           </h2>
-          <h5 className="text-white">Building robust backend logic to dynamic UI, <br/>I turn complex requirements into real-world, maintainable code.</h5>
+          <h5 className="text-white">
+            Building robust backend logic to dynamic UI, <br />I turn complex
+            requirements into real-world, maintainable code.
+          </h5>
           <div className="flex space-x-6 mt-6">
             <a
               href="https://www.linkedin.com/in/rachael-higgins"

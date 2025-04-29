@@ -10,10 +10,9 @@ const About = () => {
         backgroundImage: `url(${Background})`,
       }}
     >
-      <div className="bg-black bg-opacity-50 p-6 rounded-lg w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] max-w-5xl ml-auto text-left">
-        <Header text="Introduction"/>
-       
-        <p className="text-white mt-4 font-proxima-nova text-[0.875em] sm:text-[1em] md:text-[1em] lg:text-[1.25em] xl:text-[1.75em]">
+   <div className="bg-black bg-opacity-50 p-6 rounded-lg w-[80%] sm:w-[75%] md:w-[70%] lg:w-[65%] xl:w-[60%] ml-auto text-left">
+  <Header text="Introduction" />
+  <p className="text-white mt-4 font-proxima-nova text-[0.875em] sm:text-[1em] md:text-[1em] lg:text-[1.25em] xl:text-[1.75em] text-justify">
           From adversity to full-stack innovation, I've turned setbacks into
           source code. With a strong STEM foundation and relentless drive, I
           build real-world solutions— from scalable backends to responsive

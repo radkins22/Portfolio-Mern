@@ -2,7 +2,7 @@ import React from "react";
 import BackgroundVideo from "../../Components/BackgroundVideo.jsx";
 import LibraryPic from "../../../assets/images/libraryPic.png";
 import CapstonePic from "../../../assets/images/capstonePic.png";
-import ApChromeExt from "../../../assets/images/ap-chromeExtension.png";
+import ApDemo from "../../../assets/images/apDemo.png";
 import Portfolio from "../../../assets/images/portfolio.png";
 import ApLanding from "../../../assets/images/ap-landing.png";
 import WpFoodTruck from "../../../assets/images/wpFoodTruck.png";
@@ -11,41 +11,42 @@ import Header from "../../Components/Header.jsx";
 const Projects = () => {
   const images = [
     {
-      src: CapstonePic,
-      link: "https://github.com/radkins22/capture-it-photography",
-      title: "Capture It: Full-Stack Photography App",
-      backText: "Full-stack photography application built with MERN stack.",
-    },
-    {
-      src: LibraryPic,
-      link: "https://github.com/radkins22/full-mern",
-      title: "Library App: Full-Stack MERN",
-      backText: "A full-stack MERN application for managing library books.",
-    },
-    {
-      src: ApChromeExt,
-      link: "https://github.com/radkins22",
-      title: "Chrome Extension: Google OAuth2",
-      backText: "A Chrome extension integrating Google OAuth2 authentication.",
-    },
-    {
-      src: Portfolio,
-      link: "https://rachael-higgins.vercel.app",
-      title: "My Personal Portfolio (React App)",
-      backText: "A personal portfolio built with React showcasing my work.",
-    },
-    {
-      src: ApLanding,
-      link: "https://www.assessmentpathways.com",
-      title: "Assessment Pathways: Landing & AI Grading",
-      backText: "Landing page for AI-powered grading platform.",
+      src: ApDemo,
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSfGQyOCJD204B_GeCdr5peJ84cHLIc_BKH-md4E4sXcz1QQIg/viewform",
+      title: "Assessment Pathways AI Demo",
+      backText: " Developed an interactive demo using OpenAI, Google Forms, and Google Apps Script to showcase automated grading capabilities, demonstrating the integration of AI-driven assessment tools in education.",
     },
     {
       src: WpFoodTruck,
       link: "https://github.com/coder-j25/phillys",
-      title: "Food Truck App (React Frontend)",
-      backText: "A React-based frontend for a food truck management app.",
+      title: "Willy's Philly's Food Truck Website",
+      backText: "Collaborated on building a responsive frontend for a local Arizona-based food truck using React and Tailwind CSS, emphasizing mobile-first design and brand consistency.",
     },
+    {
+      src: ApLanding,
+      link: "https://www.assessmentpathways.com",
+      title: "Assessment Pathways (Production Site)",
+      backText: "Created a platform from the ground up to help educators streamline grading workflows by allowing them to upload student assignments and receive AI-assisted grades and feedback, reducing manual evaluation time.",
+    },
+    {
+      src: Portfolio,
+      link: "https://rachael-higgins.vercel.app",
+      title: "Rachael Higgins Portfolio",
+      backText: "  Designed and developed a personal tech portfolio using React to highlight project experience, frontend proficiency, and visual design skills.",
+    },
+    {
+      src: LibraryPic,
+      link: "https://github.com/radkins22/full-mern",
+      title: "Personal Library Manager (MERN Stack)",
+      backText: " Full-stack library management application built with MongoDB, Express, React, and Node.js, allowing users to catalog and track personal reading collections.",
+    },
+    {
+      src: CapstonePic,
+      link: "https://github.com/radkins22/capture-it-photography",
+      title: "Capture It Photography Website",
+      backText: "  Developed a full-stack photography portfolio site with user-friendly image galleries, leveraging modern web technologies to support client engagement and booking.",
+    }
+    
   ];
 
   return (
@@ -76,12 +77,9 @@ const Projects = () => {
       />
     </div>
     {/* Back */}
-    <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] flex-col justify-center items-center text-center p-4 sm:p-6 bg-black rounded-2xl">
+    <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] flex items-center text-justify p-4 sm:p-6 bg-black rounded-2xl">
       <p className="text-cyan-300 font-semibold text-base sm:text-xl">
         {image.backText}
-      </p>
-      <p className="text-white font-semibold text-base sm:text-xl">
-        Click Here: {image.link}
       </p>
     </div>
   </div>

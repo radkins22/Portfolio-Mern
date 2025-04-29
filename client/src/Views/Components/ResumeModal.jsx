@@ -156,10 +156,10 @@ function ResumeModal() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Philly’s Food Truck Website
+            Willy's Philly's Food Truck Website
           </a>
           <p>
-          Built a responsive frontend for a local Arizona-based food truck using React and Tailwind CSS, emphasizing mobile-first design and brand consistency.
+          Collaborated on building a responsive frontend for a local Arizona-based food truck using React and Tailwind CSS, emphasizing mobile-first design and brand consistency.
           </p>
 
           <a
