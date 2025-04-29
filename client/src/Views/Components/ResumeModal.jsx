@@ -142,50 +142,65 @@ function ResumeModal() {
           <p>03/12/2012</p>
           <h3 class="underline">Projects</h3>
           <a
-            href="https://github.com/radkins22/Portfolio-Mern"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfGQyOCJD204B_GeCdr5peJ84cHLIc_BKH-md4E4sXcz1QQIg/viewform"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Portfolio Website
+           Assessment Pathways AI Demo
           </a>
           <p>
-            Designed and developed a responsive portfolio website using React,
-            HTML, CSS, and JavaScript to showcase projects and skills.
+          Developed an interactive demo using OpenAI, Google Forms, and Google Apps Script to showcase automated grading capabilities, demonstrating the integration of AI-driven assessment tools in education.
           </p>
           <a
-            href="https://github.com/radkins22/capture-it-photography"
+            href="https://github.com/coder-j25/phillys"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Photography Website
+            Philly’s Food Truck Website
           </a>
           <p>
-            Created a full-stack website using Mongoose, Express, React, and
-            Node.js.
+          Built a responsive frontend for a local Arizona-based food truck using React and Tailwind CSS, emphasizing mobile-first design and brand consistency.
           </p>
 
           <a
-            href="https://github.com/radkins22/AP-Chrome-Extension"
+            href="https://www.assessmentpathways.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Assessment Pathways
+            Assessment Pathways (Production Site)
           </a>
           <p>
-            Developed a google chrome extension using React, Open AI, and
-            Google OAuth2.
+          Created a platform from the ground up to help educators streamline grading workflows by allowing them to upload student assignments and receive AI-assisted grades and feedback, reducing manual evaluation time.
+          </p>
+          <a
+            href="https://rachael-higgins.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Rachael Higgins Portfolio
+          </a>
+          <p>
+          Designed and developed a personal tech portfolio using React to highlight project experience, frontend proficiency, and visual design skills.
           </p>
           <a
             href="https://github.com/radkins22/full-mern"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Full MERN Library
+            Personal Library Manager (MERN Stack)
           </a>
-
           <p>
-            Created a full-stack library application using MongoDB, Express,
-            React, and Node.js.
+          Full-stack library management application built with MongoDB, Express, React, and Node.js, allowing users to catalog and track personal reading collections.
+          </p>
+          <a
+            href="https://github.com/radkins22/capture-it-photography"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Capture It Photography Website
+          </a>
+          <p>
+          Developed a full-stack photography portfolio site with user-friendly image galleries, leveraging modern web technologies to support client engagement and booking.
           </p>
         </Modal.Body>
       </Modal>

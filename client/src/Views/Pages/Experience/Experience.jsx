@@ -1,6 +1,7 @@
 import React from "react";
 import Background from "../../../assets/images/pg3BG.png";
 import ResumeModal from "../../Components/ResumeModal";
+import Header from "../../Components/Header";
 
 const Experience = () => {
   return (
@@ -76,9 +77,8 @@ const Experience = () => {
           <div className="flex flex-col space-y-3 order-1 md:order-2">
             {/* Experience Heading */}
             <div className="bg-transparent rounded-lg mb-2">
-              <h1 className="!text-cyan-300 !font-bold !font-proxima-nova text-[1.5em] sm:text-[2em] md:text-[2.5em] lg:text-[3em] xl:text-[3.5em]">
-                Experience
-              </h1>
+              <Header text="Experience" className="!text-left"/>
+      
             </div>
 
             {/* Assessment Pathways */}

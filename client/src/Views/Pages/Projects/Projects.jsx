@@ -6,6 +6,7 @@ import ApChromeExt from "../../../assets/images/ap-chromeExtension.png";
 import Portfolio from "../../../assets/images/portfolio.png";
 import ApLanding from "../../../assets/images/ap-landing.png";
 import WpFoodTruck from "../../../assets/images/wpFoodTruck.png";
+import Header from "../../Components/Header.jsx";
 
 const Projects = () => {
   const images = [
@@ -53,11 +54,8 @@ const Projects = () => {
       <BackgroundVideo />
 
       {/* Foreground Content */}
-      <div className="relative z-10 flex flex-col items-center px-4 py-16 flex-grow">
-        <h1 className="!text-5xl md:text-7xl !font-bold !text-cyan-300 !mb-12 text-center drop-shadow-lg">
-          Projects
-        </h1>
-
+        <Header text="Projects" align="center" />
+      <div className="relative z-10 flex flex-col items-center px-4 py-4 flex-grow">
         <div className="w-full md:w-[75%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map((image, index) => (
             <a

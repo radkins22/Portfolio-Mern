@@ -3,6 +3,7 @@ import { Form } from "react-bootstrap";
 import Background from "../../../assets/images/pg6BG.png";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import Header from "../../Components/Header";
 
 const ContactForm = () => {
   const form = useRef();
@@ -50,9 +51,7 @@ const ContactForm = () => {
     >
       <div className="flex items-center justify-center w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-3/4 bg-transparent p-6">
         <div className="w-full max-w-md">
-          <h2 className=" text-center !text-cyan-300 !text-5xl sm:text-4xl md:text-5xl mb-6 pt-10">
-            Contact Me
-          </h2>
+          <Header text="Contact Me" align="center"/>
           <Form
             ref={form}
             onSubmit={sendEmail}
