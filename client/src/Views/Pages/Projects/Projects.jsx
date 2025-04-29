@@ -36,15 +36,12 @@ const Projects = () => {
   const handleTouchEnd = (e, index, link) => {
     const swipeDistance = touchStart - touchEnd;
 
-    // If swipe distance is significant (more than 50px), flip the card
     if (Math.abs(swipeDistance) > 50) {
       toggleFlip(index);
     } else {
-      // If swipe is not significant, allow clicking to navigate
       window.location.href = link;
     }
 
-    // Reset the touch states
     setTouchStart(0);
     setTouchEnd(0);
     setIsSwiping(false);
@@ -97,10 +94,7 @@ const Projects = () => {
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden flex flex-col">
-      {/* Background Video */}
       <BackgroundVideo />
-
-      {/* Foreground Content */}
       <Header text="Projects" align="center" />
       <div className="relative z-10 flex flex-col items-center px-4 py-4 flex-grow">
         <div className="w-full md:w-[75%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -123,7 +117,6 @@ const Projects = () => {
                       : "group-hover:[transform:rotateY(180deg)]"
                   }`}
                 >
-                  {/* Front */}
                   <div className="absolute inset-0 [backface-visibility:hidden]">
                     <img
                       src={image.src}
@@ -131,7 +124,6 @@ const Projects = () => {
                       className="w-full h-full object-cover object-left rounded-2xl"
                     />
                   </div>
-                  {/* Back */}
                   <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] flex items-center text-justify p-4 sm:p-6 bg-black rounded-2xl">
                     <p className="text-cyan-300 font-semibold text-[0.8rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1rem]">
                       {image.backText}
