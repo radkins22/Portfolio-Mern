@@ -83,9 +83,9 @@ const Projects = () => {
                   </div>
                   {/* Back */}
                   <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] flex items-center text-justify p-4 sm:p-6 bg-black rounded-2xl">
-                    <p className="text-cyan-300 font-semibold text-sm sm:text-lg">
-                      {image.backText}
-                    </p>
+                  <p className="text-cyan-300 font-semibold text-[0.9rem] sm:text-[1.1rem]">
+  {image.backText}
+</p>
                   </div>
                 </div>
               </div>
