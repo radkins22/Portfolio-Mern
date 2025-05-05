@@ -57,7 +57,7 @@ const Projects = () => {
     },
     {
       src: WpFoodTruck,
-      link: "https://github.com/coder-j25/phillys",
+      link: "https://willysphillys.com/",
       title: "Willy's Philly's Food Truck Website",
       backText:
         "Collaborated on building a responsive frontend for a local Arizona-based food truck using React and Tailwind CSS, emphasizing mobile-first design and brand consistency.",

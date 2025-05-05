@@ -34,7 +34,7 @@ const Home = () => {
 <img
   src={Selfie}
   alt="Rachael Higgins"
-  className="rounded-full h-40 w-40 sm:h-48 sm:w-48 object-contain object-center shadow-lg absolute top-[5%] left-[3%] sm:top-[14%] sm:left-[12%]"
+  className="rounded-full h-40 w-40 sm:h-48 sm:w-48 object-contain object-center shadow-lg absolute top-[2%] left-[3%] sm:top-[10%] sm:left-[12%]"
 />
       <div className="h-full flex justify-center items-center text-white relative">
         <div className="absolute text-left left-4 top-1/4 sm:left-[14%] sm:top-[35%] max-w-[90%]">
