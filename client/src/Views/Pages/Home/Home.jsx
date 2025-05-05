@@ -31,11 +31,11 @@ const Home = () => {
         backgroundPosition: "center",
       }}
     >
-      <img
-        src={Selfie}
-        alt="Rachael Higgins"
-        className="rounded-full h-32 w-32 sm:h-40 sm:w-40 shadow-lg absolute top-[3%] left-[3%] sm:top-[12%] sm:left-[12%]"
-      />
+<img
+  src={Selfie}
+  alt="Rachael Higgins"
+  className="rounded-full h-40 w-40 sm:h-48 sm:w-48 object-contain object-center shadow-lg absolute top-[5%] left-[3%] sm:top-[14%] sm:left-[12%]"
+/>
       <div className="h-full flex justify-center items-center text-white relative">
         <div className="absolute text-left left-4 top-1/4 sm:left-[14%] sm:top-[35%] max-w-[90%]">
           <h1 style={glitchStyle} className="font-bold">
