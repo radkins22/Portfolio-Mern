@@ -1,7 +1,7 @@
 import React from "react";
 import Background from "../../../assets/images/pg1BG.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Selfie from "../../../assets/images/selfie.png";
+import Selfie from "../../../assets/images/selfie2.png";
 
 const Home = () => {
   const glitchStyle = {
