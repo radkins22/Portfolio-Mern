@@ -71,7 +71,7 @@ const Projects = () => {
     },
     {
       src: Portfolio,
-      link: "https://rachael-higgins.vercel.app",
+      link: "https://not-your-avg-nerd.dev/",
       title: "Rachael Higgins Portfolio",
       backText:
         "Designed and developed a personal tech portfolio using React to highlight project experience, frontend proficiency, and visual design skills.",
