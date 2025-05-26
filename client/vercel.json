@@ -4,5 +4,12 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
+  ],
+   "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://not-your-avg-nerd.dev/$1",
+      "permanent": true
+    }
   ]
 }
